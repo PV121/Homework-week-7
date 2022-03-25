@@ -8,18 +8,12 @@ import java.util.Scanner;
 public class Program1 {
     //main method
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);// scanner code to use console
-        System.out.println("Enter an Integer number");//to print statement
-        int num = scan.nextInt();
-
-        //if number is divisible by 2 then it's an even number
-        //else odd number
-        if (num % 2 == 0) {
-            System.out.println("Entered number is even");
-
-        } else {
-            System.out.println("Entered number is odd");
-        }
+        Scanner sc = new Scanner(System.in);
+       System.out.println("Please enter a number : ");
+       int number = sc.nextInt();
+       // java odd or even
+       String oddEven = (number % 2 == 0) ? "even" : "odd";
+       System.out.println(number + " is " + oddEven);
 
 
     }
